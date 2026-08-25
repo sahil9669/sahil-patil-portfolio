@@ -1,5 +1,6 @@
 import SectionHeading from "../ui/SectionHeading";
 import Reveal from "../ui/Reveal";
+import profileImage from "../../assets/sahil.webp";
 
 function About() {
   return (
@@ -53,7 +54,7 @@ function About() {
               "
             />
 
-            {/* Initials */}
+            {/* Initials
             <div
               className="
                 relative
@@ -71,7 +72,30 @@ function About() {
               "
             >
               SP
-            </div>
+            </div> */}
+
+            {/* Profile Image */}
+              <div className="relative h-full w-full">
+                <img
+                  src={profileImage}
+                  alt="Sahil Patil"
+                  className="
+                    h-full
+                    w-full
+                    object-cover
+                    object-center
+                  "
+                />
+
+                {/* Purple overlay */}
+                <div
+                  className="
+                    absolute inset-0
+                    bg-[radial-gradient(circle_at_30%_20%,rgba(124,92,252,0.25),transparent_15%)]
+                    mix-blend-screen
+                  "
+                />
+              </div>
 
             {/* Bottom Tag */}
             <div
