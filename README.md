@@ -1,16 +1,105 @@
-# React + Vite
+# Sahil Patil — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website built to showcase my skills, projects, experience, and development journey.
 
-Currently, two official plugins are available:
+🔗 **Live Website:** [devsahil.vercel.app](https://devsahil.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 About The Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This portfolio represents my work as a Computer Engineering student and aspiring full-stack developer.
 
-## Expanding the ESLint configuration
+The website showcases:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 👨‍💻 About me
+- 🛠️ Technical skills
+- 🚀 Featured projects
+- 💼 Experience
+- 📬 Contact information
+
+The portfolio focuses on a modern developer-inspired UI with animations, interactive background effects, responsive layouts, and smooth scrolling.
+
+---
+
+## ✨ Features
+
+- Fully responsive design
+- Modern dark developer-themed UI
+- Smooth scrolling navigation
+- Animated background effects
+- Mouse-following glow effect
+- Scroll reveal animations
+- Skills showcase
+- Featured projects section
+- Experience timeline
+- Contact section
+- Social media links
+- Resume download
+- Responsive navigation
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React
+- Vite
+- Tailwind CSS
+
+### Libraries & Tools
+
+- Lucide React
+- JavaScript
+- HTML5
+- CSS3
+
+### Deployment
+
+- Vercel
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+│
+├── assets/
+│
+├── components/
+│   │
+│   ├── layout/
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   └── BackgroundEffects.jsx
+│   │
+│   ├── sections/
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Experience.jsx
+│   │   └── Contact.jsx
+│   │
+│   └── ui/
+│       ├── Reveal.jsx
+│       ├── SectionHeading.jsx
+│       ├── SkillCard.jsx
+│       ├── ProjectCard.jsx
+│       └── SocialLinks.jsx
+│
+├── data/
+│   ├── skills.js
+│   ├── projects.js
+│   └── navigation.js
+│
+├── hooks/
+│   ├── useReveal.js
+│   ├── useMouseGlow.js
+│   └── useBackgroundOrbs.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
