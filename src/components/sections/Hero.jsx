@@ -61,16 +61,15 @@ function Hero() {
         <h1
           className="
             font-['Space_Grotesk']
-            text-[clamp(40px,5vw,64px)]
+            text-[clamp(48px,5vw,72px)]
             font-bold
-            leading-[1.05]
-            tracking-tight
+            leading-[0.95]
+            tracking-[-0.045em]
             text-[#f2f3f6]
           "
         >
           MERN Stack
           <br />
-
           <span
             className="
               bg-gradient-to-r

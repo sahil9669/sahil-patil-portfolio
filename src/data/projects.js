@@ -4,8 +4,8 @@ export const PROJECTS = [
     desc: "Mess management & food ordering platform with live order tracking.",
     stack: ["React", "Node.js", "Express.js", "MongoDB"],
     icon: "M3 7h18M6 7v13a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7M9 7V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3",
-    liveUrl: "https://github.com/Uddhav1602/Dine-IN-Live",
-    githubUrl: "https://github.com/Uddhav1602/Dine-IN-Live",
+    liveUrl: "https://dine-in-live.vercel.app/",
+    githubUrl: "https://github.com/sahil9669/Dine-IN-Live",
   },
 
   {
