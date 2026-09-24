@@ -11,14 +11,14 @@ function Navbar() {
       className={`
         fixed left-0 right-0 top-0 z-50
         flex items-center justify-between
-        border-b
+        border-b border-[#d3d7dd]
         px-6 py-[18px]
         transition-all duration-300
         lg:px-12
         ${
           scrolled
-            ? "border-white/[0.08] bg-[#0a0b0f]/70 py-3.5 backdrop-blur-xl"
-            : "border-transparent"
+            ? "bg-white/90 py-3.5 backdrop-blur-xl"
+            : "bg-transparent"
         }
       `}
     >
@@ -30,7 +30,7 @@ function Navbar() {
           font-['Space_Grotesk']
           text-[19px]
           font-semibold
-          text-[#f2f3f6]
+          text-[#17191f]
         "
       >
         <span>
@@ -44,7 +44,6 @@ function Navbar() {
             inline-block h-1.5 w-1.5
             rounded-full
             bg-[#22d3ee]
-            shadow-[0_0_8px_#22d3ee]
           "
         />
       </a>
@@ -59,10 +58,10 @@ function Navbar() {
               ml-[38px]
               font-medium
               text-sm
-              text-[#9aa0ac]
+              text-[#5f636d]
               transition-colors duration-200
               first:ml-0
-              hover:text-[#f2f3f6]
+              hover:text-[#17191f]
             "
           >
             {link}
@@ -75,21 +74,21 @@ function Navbar() {
         href={resume}
         target="_blank"
         rel="noopener noreferrer"
-        // download="Sahil_Patil_Resume.pdf"
         className="
           inline-flex items-center gap-1.5
           rounded-full
-          border border-white/[0.08]
-          bg-[#12141b]
+          border border-[#dfe2e7]
+          bg-white
           px-[18px] py-2
           font-mono
           text-xs
           font-medium
-          text-[#f2f3f6]
+          text-[#17191f]
+          shadow-sm
           transition-all duration-200
           hover:border-[#7c5cfc]
           hover:text-[#7c5cfc]
-          hover:shadow-[0_0_20px_-4px_rgba(124,92,252,0.35)]
+          hover:shadow-md
         "
       >
         <Download size={13} />

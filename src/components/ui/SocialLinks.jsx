@@ -5,19 +5,21 @@ function SocialLinks() {
       <a
         href="https://github.com/sahil9669"
         target="_blank"
+        rel="noopener noreferrer"
         aria-label="GitHub"
         className="
           flex h-[42px] w-[42px]
           items-center justify-center
           rounded-[11px]
-          border border-white/[0.08]
-          bg-[#12141b]
-          text-[#9aa0ac]
+          border border-[#e1e4e8]
+          bg-white
+          text-[#5f636d]
+          shadow-sm
           transition-all duration-300
           hover:-translate-y-0.5
           hover:border-[#7c5cfc]
           hover:text-[#7c5cfc]
-          hover:shadow-[0_0_18px_-4px_rgba(124,92,252,0.35)]
+          hover:shadow-[0_8px_20px_-8px_rgba(124,92,252,0.25)]
         "
       >
         <svg
@@ -34,19 +36,21 @@ function SocialLinks() {
       <a
         href="https://www.linkedin.com/in/sahil-patil-b3125a260/"
         target="_blank"
+        rel="noopener noreferrer"
         aria-label="LinkedIn"
         className="
           flex h-[42px] w-[42px]
           items-center justify-center
           rounded-[11px]
-          border border-white/[0.08]
-          bg-[#12141b]
-          text-[#9aa0ac]
+          border border-[#e1e4e8]
+          bg-white
+          text-[#5f636d]
+          shadow-sm
           transition-all duration-300
           hover:-translate-y-0.5
           hover:border-[#7c5cfc]
           hover:text-[#7c5cfc]
-          hover:shadow-[0_0_18px_-4px_rgba(124,92,252,0.35)]
+          hover:shadow-[0_8px_20px_-8px_rgba(124,92,252,0.25)]
         "
       >
         <svg
@@ -69,14 +73,15 @@ function SocialLinks() {
           flex h-[42px] w-[42px]
           items-center justify-center
           rounded-[11px]
-          border border-white/[0.08]
-          bg-[#12141b]
-          text-[#9aa0ac]
+          border border-[#e1e4e8]
+          bg-white
+          text-[#5f636d]
+          shadow-sm
           transition-all duration-300
           hover:-translate-y-0.5
           hover:border-[#7c5cfc]
           hover:text-[#7c5cfc]
-          hover:shadow-[0_0_18px_-4px_rgba(124,92,252,0.35)]
+          hover:shadow-[0_8px_20px_-8px_rgba(124,92,252,0.25)]
         "
       >
         <svg

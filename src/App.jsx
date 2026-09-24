@@ -1,3 +1,4 @@
+
 import BackgroundEffects from "./components/layout/BackgroundEffects";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
@@ -11,8 +12,8 @@ import Contact from "./components/sections/Contact";
 
 function App() {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-[#0a0b0f] text-[#f2f3f6]">
-      <BackgroundEffects />
+    <div className="min-h-screen overflow-x-hidden bg-[#e7eaf1] text-[#17191f]">
+      {/* <BackgroundEffects /> */}
 
       <Navbar />
 
@@ -31,3 +32,4 @@ function App() {
 }
 
 export default App;
+

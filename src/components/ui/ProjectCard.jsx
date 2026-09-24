@@ -6,12 +6,13 @@ function ProjectCard({ project }) {
       className="
         overflow-hidden
         rounded-[20px]
-        border border-white/[0.08]
-        bg-[#12141b]
+        border border-[#e1e4e8]
+        bg-white
+        shadow-sm
         transition-all duration-300
         hover:-translate-y-2
         hover:border-[#7c5cfc]/50
-        hover:shadow-2xl hover:shadow-black/40
+        hover:shadow-[0_20px_40px_-16px_rgba(0,0,0,0.15)]
       "
     >
       {/* Project Icon */}
@@ -19,7 +20,8 @@ function ProjectCard({ project }) {
         className="
           flex h-[170px]
           items-center justify-center
-          bg-gradient-to-br from-[#171a24] to-[#10121a]
+          border-b border-[#e5e7eb]
+          bg-[#f8f9fa]
         "
       >
         <svg
@@ -38,11 +40,26 @@ function ProjectCard({ project }) {
 
       {/* Project Content */}
       <div className="px-[22px] pb-6 pt-[22px]">
-        <h3 className="font-['Space_Grotesk'] text-lg font-semibold text-[#f2f3f6]">
+        <h3
+          className="
+            font-['Space_Grotesk']
+            text-lg
+            font-semibold
+            text-[#17191f]
+          "
+        >
           {project.title}
         </h3>
 
-        <p className="mt-2 min-h-[38px] text-[13.5px] text-[#9aa0ac]">
+        <p
+          className="
+            mt-2
+            min-h-[38px]
+            text-[13.5px]
+            leading-relaxed
+            text-[#5f636d]
+          "
+        >
           {project.desc}
         </p>
 
@@ -53,12 +70,12 @@ function ProjectCard({ project }) {
               key={technology}
               className="
                 rounded-full
-                border border-[#22d3ee]/20
+                border border-[#22d3ee]/25
                 bg-[#22d3ee]/[0.08]
                 px-2 py-1
                 font-mono
                 text-[10.5px]
-                text-[#22d3ee]
+                text-[#0891b2]
               "
             >
               {technology}
@@ -75,7 +92,7 @@ function ProjectCard({ project }) {
             rel="noopener noreferrer"
             className="
               flex items-center gap-1.5
-              text-[#9aa0ac]
+              text-[#5f636d]
               transition-colors
               hover:text-[#7c5cfc]
             "
@@ -91,7 +108,7 @@ function ProjectCard({ project }) {
             rel="noopener noreferrer"
             className="
               flex items-center gap-1.5
-              text-[#9aa0ac]
+              text-[#5f636d]
               transition-colors
               hover:text-[#7c5cfc]
             "

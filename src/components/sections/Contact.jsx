@@ -19,29 +19,15 @@ function Contact() {
           className="
             relative overflow-hidden
             rounded-[24px]
-            border border-white/[0.08]
-            bg-gradient-to-br
-            from-[#171a24]
-            to-[#101218]
+            border border-[#e1e4e8]
+            bg-white
             px-6 py-16
             text-center
+            shadow-sm
             sm:px-10
             lg:px-16
           "
         >
-          {/* Background Glow */}
-          <div
-            className="
-              pointer-events-none
-              absolute left-1/2 top-0
-              h-[300px] w-[500px]
-              -translate-x-1/2
-              rounded-full
-              bg-[#7c5cfc]/20
-              blur-[100px]
-            "
-          />
-
           <div className="relative z-10">
             {/* Eyebrow */}
             <div
@@ -67,7 +53,7 @@ function Contact() {
                 text-3xl
                 font-bold
                 tracking-tight
-                text-[#f2f3f6]
+                text-[#17191f]
                 sm:text-4xl
                 lg:text-5xl
               "
@@ -78,7 +64,7 @@ function Contact() {
                 className="
                   bg-gradient-to-r
                   from-[#7c5cfc]
-                  to-[#22d3ee]
+                  to-[#0891b2]
                   bg-clip-text
                   text-transparent
                 "
@@ -94,7 +80,7 @@ function Contact() {
                 max-w-xl
                 text-base
                 leading-relaxed
-                text-[#9aa0ac]
+                text-[#5f636d]
               "
             >
               I'm currently open to internships, entry-level opportunities,
@@ -103,7 +89,7 @@ function Contact() {
 
             {/* Email Button */}
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:sahilpatil9889@gmail.com"
               className="
                 mt-8
                 inline-flex items-center gap-2
@@ -113,10 +99,11 @@ function Contact() {
                 text-sm
                 font-semibold
                 text-white
-                shadow-[0_8px_24px_-8px_rgba(124,92,252,0.35)]
+                shadow-[0_8px_24px_-8px_rgba(124,92,252,0.25)]
                 transition-all duration-300
                 hover:-translate-y-0.5
-                hover:shadow-[0_12px_32px_-6px_rgba(124,92,252,0.4)]
+                hover:bg-[#6d4ee8]
+                hover:shadow-[0_12px_32px_-6px_rgba(124,92,252,0.3)]
               "
             >
               <Mail size={16} />

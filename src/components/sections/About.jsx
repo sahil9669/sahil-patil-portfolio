@@ -31,7 +31,7 @@ function About() {
           lg:grid-cols-[0.75fr_1.25fr]
         "
       >
-        {/* Avatar */}
+        {/* Profile Image */}
         <Reveal>
           <div
             className="
@@ -39,63 +39,26 @@ function About() {
               aspect-square
               overflow-hidden
               rounded-[24px]
-              border border-white/[0.08]
-              bg-gradient-to-br
-              from-[#171a22]
-              to-[#12141b]
+              border border-[#e1e4e8]
+              bg-white
+              shadow-[0_25px_60px_-18px_rgba(15,23,42,0.28)]
+              transition-all duration-300
+              hover:-translate-y-1
+              hover:shadow-[0_30px_70px_-18px_rgba(15,23,42,0.34)]
             "
           >
-            {/* Purple glow */}
-            <div
-              className="
-                absolute inset-0
-                bg-[radial-gradient(circle_at_30%_20%,rgba(124,92,252,0.35),transparent_55%)]
-                opacity-50
-              "
-            />
-
-            {/* Initials
-            <div
-              className="
-                relative
-                flex h-full
-                items-center justify-center
-                font-['Space_Grotesk']
-                text-[120px]
-                font-bold
-                leading-none
-                text-transparent
-                bg-gradient-to-br
-                from-[#7c5cfc]
-                to-[#22d3ee]
-                bg-clip-text
-              "
-            >
-              SP
-            </div> */}
-
-            {/* Profile Image */}
-              <div className="relative h-full w-full">
-                <img
-                  src={profileImage}
-                  alt="Sahil Patil"
-                  className="
-                    h-full
-                    w-full
-                    object-cover
-                    object-center
-                  "
-                />
-
-                {/* Purple overlay */}
-                <div
-                  className="
-                    absolute inset-0
-                    bg-[radial-gradient(circle_at_30%_20%,rgba(124,92,252,0.25),transparent_15%)]
-                    mix-blend-screen
-                  "
-                />
-              </div>
+            <div className="relative h-full w-full">
+              <img
+                src={profileImage}
+                alt="Sahil Patil"
+                className="
+                  h-full
+                  w-full
+                  object-cover
+                  object-center
+                "
+              />
+            </div>
 
             {/* Bottom Tag */}
             <div
@@ -103,18 +66,19 @@ function About() {
                 absolute bottom-[18px] left-[18px] right-[18px]
                 flex items-center justify-between
                 rounded-xl
-                border border-white/[0.08]
-                bg-[#0a0b0f]/70
+                border border-[#e1e4e8]
+                bg-white/90
                 px-4 py-3
                 font-mono
                 text-xs
-                text-[#9aa0ac]
+                text-[#5f636d]
                 backdrop-blur-md
+                shadow-sm
               "
             >
               <span>sahil_patil.dev</span>
 
-              <span className="text-[#22d3ee]">
+              <span className="text-[#0891b2]">
                 ● online
               </span>
             </div>
@@ -130,15 +94,15 @@ function About() {
                 max-w-[560px]
                 text-base
                 leading-relaxed
-                text-[#9aa0ac]
+                text-[#5f636d]
               "
             >
               I'm a{" "}
-              <strong className="font-semibold text-[#f2f3f6]">
+              <strong className="font-semibold text-[#17191f]">
                 Computer Engineering
               </strong>{" "}
               graduate with a focus on the{" "}
-              <strong className="font-semibold text-[#f2f3f6]">
+              <strong className="font-semibold text-[#17191f]">
                 MERN stack
               </strong>{" "}
               — building products where the frontend, API layer, and database
@@ -152,7 +116,7 @@ function About() {
                 max-w-[560px]
                 text-base
                 leading-relaxed
-                text-[#9aa0ac]
+                text-[#5f636d]
               "
             >
               I care about clean component architecture, well-modelled REST
@@ -201,13 +165,14 @@ function StatCard({ number, label }) {
     <div
       className="
         rounded-[14px]
-        border border-white/[0.08]
-        bg-[#12141b]
+        border border-[#e1e4e8]
+        bg-white
         px-4 py-5
+        shadow-sm
         transition-all duration-300
         hover:-translate-y-1
         hover:border-[#7c5cfc]
-        hover:shadow-[0_12px_30px_-12px_rgba(124,92,252,0.35)]
+        hover:shadow-[0_12px_30px_-12px_rgba(124,92,252,0.25)]
       "
     >
       <div
@@ -222,7 +187,7 @@ function StatCard({ number, label }) {
         {number}
       </div>
 
-      <div className="text-[12.5px] text-[#5c6270]">
+      <div className="text-[12.5px] text-[#6b7280]">
         {label}
       </div>
     </div>

@@ -6,13 +6,15 @@ function SkillCard({ skill }) {
         flex flex-col items-center gap-3
         overflow-hidden
         rounded-2xl
-        border border-white/[0.08]
-        bg-[#12141b]
+        border border-[#e1e4e8]
+        bg-white
         px-4 py-6
         text-center
+        shadow-sm
         transition-all duration-300
         hover:-translate-y-1.5
         hover:border-[#7c5cfc]
+        hover:shadow-[0_12px_30px_-12px_rgba(124,92,252,0.2)]
       "
     >
       <svg
@@ -28,7 +30,7 @@ function SkillCard({ skill }) {
         <path d={skill.path} />
       </svg>
 
-      <div className="text-[13px] font-semibold text-[#f2f3f6]">
+      <div className="text-[13px] font-semibold text-[#17191f]">
         {skill.name}
       </div>
     </div>

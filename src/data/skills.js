@@ -31,7 +31,7 @@ export const SKILLS = [
 
   {
     name: "Express.js",
-    color: "#ffffff",
+    color: "#17191f",
     path: "M2 12h20M2 12l5-5M2 12l5 5M22 12l-5-5M22 12l-5 5",
   },
 

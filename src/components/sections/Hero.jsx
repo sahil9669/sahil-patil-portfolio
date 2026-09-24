@@ -2,7 +2,7 @@ import { ArrowRight, Download } from "lucide-react";
 
 import CodeEditor from "../ui/CodeEditor";
 import SocialLinks from "../ui/SocialLinks";
-import resume from "../../assets/resume.pdf"
+import resume from "../../assets/resume.pdf";
 
 function Hero() {
   return (
@@ -25,12 +25,12 @@ function Hero() {
             mb-7 inline-flex
             items-center gap-2
             rounded-full
-            border border-[#22d3ee]/25
+            border border-[#22d3ee]/30
             bg-[#22d3ee]/[0.08]
             px-3.5 py-1.5
             font-mono
             text-xs
-            text-[#22d3ee]
+            text-[#0891b2]
           "
         >
           <span
@@ -65,7 +65,7 @@ function Hero() {
             font-bold
             leading-[0.95]
             tracking-[-0.045em]
-            text-[#f2f3f6]
+            text-[#17191f]
           "
         >
           MERN Stack
@@ -74,7 +74,7 @@ function Hero() {
             className="
               bg-gradient-to-r
               from-[#7c5cfc]
-              to-[#22d3ee]
+              to-[#0891b2]
               bg-clip-text
               text-transparent
             "
@@ -90,7 +90,7 @@ function Hero() {
             max-w-[480px]
             text-[17px]
             leading-relaxed
-            text-[#9aa0ac]
+            text-[#5f636d]
           "
         >
           I build modern, scalable and user-focused web applications — from
@@ -99,6 +99,7 @@ function Hero() {
 
         {/* Buttons */}
         <div className="mb-11 flex flex-wrap gap-4">
+          {/* Primary Button */}
           <a
             href="#projects"
             className="
@@ -108,16 +109,18 @@ function Hero() {
               px-[26px] py-3.5
               text-sm font-semibold
               text-white
-              shadow-[0_8px_24px_-8px_rgba(124,92,252,0.35)]
+              shadow-[0_8px_24px_-8px_rgba(124,92,252,0.25)]
               transition-all duration-300
               hover:-translate-y-0.5
-              hover:shadow-[0_12px_32px_-6px_rgba(124,92,252,0.35)]
+              hover:bg-[#6d4ee8]
+              hover:shadow-[0_12px_28px_-8px_rgba(124,92,252,0.3)]
             "
           >
             View My Work
             <ArrowRight size={16} />
           </a>
 
+          {/* Resume Button */}
           <a
             href={resume}
             target="_blank"
@@ -125,14 +128,17 @@ function Hero() {
             className="
               inline-flex items-center gap-2
               rounded-xl
-              border border-white/[0.08]
-              bg-[#12141b]
+              border border-[#dfe2e7]
+              bg-white
               px-[26px] py-3.5
               text-sm font-semibold
-              text-[#f2f3f6]
+              text-[#17191f]
+              shadow-sm
               transition-all duration-300
               hover:-translate-y-0.5
-              hover:border-[#9aa0ac]
+              hover:border-[#7c5cfc]
+              hover:text-[#7c5cfc]
+              hover:shadow-md
             "
           >
             <Download size={16} />
@@ -151,18 +157,7 @@ function Hero() {
           justify-center
         "
       >
-        <div className="relative w-full max-w-[480px]">
-          {/* Glow behind editor */}
-          <div
-            className="
-              pointer-events-none
-              absolute -inset-10
-              -z-10
-              bg-[radial-gradient(circle_at_60%_30%,rgba(124,92,252,0.35),transparent_65%)]
-              blur-[30px]
-            "
-          />
-
+        <div className="w-full max-w-[480px]">
           <CodeEditor />
         </div>
       </div>
@@ -171,3 +166,4 @@ function Hero() {
 }
 
 export default Hero;
+

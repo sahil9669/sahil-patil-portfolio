@@ -15,7 +15,14 @@ function SectionHeading({
       <Reveal
         as="h2"
         delay={0.05}
-        className="mt-3 text-3xl font-bold tracking-tight text-[#f2f3f6] sm:text-4xl"
+        className="
+          mt-3
+          text-3xl
+          font-bold
+          tracking-tight
+          text-[#17191f]
+          sm:text-4xl
+        "
       >
         {title}
       </Reveal>
@@ -23,7 +30,12 @@ function SectionHeading({
       {subtitle && (
         <Reveal
           delay={0.1}
-          className="mt-4 max-w-xl text-base text-[#9aa0ac]"
+          className="
+            mt-4
+            max-w-xl
+            text-base
+            text-[#5f636d]
+          "
         >
           {subtitle}
         </Reveal>

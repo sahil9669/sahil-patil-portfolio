@@ -7,9 +7,9 @@ function CodeEditor() {
         relative
         overflow-hidden
         rounded-[20px]
-        border border-white/[0.08]
-        bg-gradient-to-b from-[#15171f] to-[#101218]
-        shadow-[0_30px_80px_-20px_rgba(0,0,0,0.7)]
+        border border-[#e1e4e8]
+        bg-white
+        shadow-[0_20px_50px_-20px_rgba(0,0,0,0.18)]
         animate-[float_6s_ease-in-out_infinite]
       "
     >
@@ -17,8 +17,8 @@ function CodeEditor() {
       <div
         className="
           flex items-center gap-2
-          border-b border-white/[0.08]
-          bg-white/[0.02]
+          border-b border-[#e5e7eb]
+          bg-[#f8f9fa]
           px-4 py-[13px]
         "
       >
@@ -31,32 +31,34 @@ function CodeEditor() {
       <div
         className="
           flex
-          border-b border-white/[0.08]
-          bg-white/[0.02]
+          border-b border-[#e5e7eb]
+          bg-[#f8f9fa]
           px-2
         "
       >
+        {/* Active Tab */}
         <div
           className="
             flex items-center gap-2
-            border-r border-white/[0.05]
+            border-r border-[#e5e7eb]
             border-t-2 border-t-[#7c5cfc]
-            bg-[#12141b]
+            bg-white
             px-4 py-2.5
             font-mono text-xs
-            text-[#f2f3f6]
+            text-[#17191f]
           "
         >
           <Terminal size={11} />
           App.jsx
         </div>
 
+        {/* Inactive Tab */}
         <div
           className="
-            border-r border-white/[0.05]
+            border-r border-[#e5e7eb]
             px-4 py-2.5
             font-mono text-xs
-            text-[#5c6270]
+            text-[#6b7280]
           "
         >
           server.js
@@ -66,76 +68,81 @@ function CodeEditor() {
       {/* Code */}
       <div
         className="
+          bg-white
           px-[22px] py-5
           font-mono text-[12.8px]
           leading-[1.9]
         "
       >
         <CodeLine number="1">
-          <span className="text-[#5c6270]">
+          <span className="text-[#8b929c]">
             // building something great
           </span>
         </CodeLine>
 
         <CodeLine number="2">
-          <span className="text-[#c792ea]">const</span>{" "}
-          <span className="text-[#82aaff]">Developer</span>{" "}
-          <span className="text-[#89ddff]">= () =&gt; {"{"}</span>
+          <span className="text-[#8b5cf6]">const</span>{" "}
+          <span className="text-[#2563eb]">Developer</span>{" "}
+          <span className="text-[#0891b2]">= () =&gt; {"{"}</span>
         </CodeLine>
 
         <CodeLine number="3">
           &nbsp;&nbsp;
-          <span className="text-[#c792ea]">const</span>{" "}
+          <span className="text-[#8b5cf6]">const</span>{" "}
           [stack]{" "}
-          <span className="text-[#89ddff]">=</span>{" "}
+          <span className="text-[#0891b2]">=</span>{" "}
           useState
-          <span className="text-[#89ddff]">(</span>
-          <span className="text-[#c3e88d]">'MERN'</span>
-          <span className="text-[#89ddff]">);</span>
+          <span className="text-[#0891b2]">(</span>
+          <span className="text-[#16a34a]">'MERN'</span>
+          <span className="text-[#0891b2]">);</span>
         </CodeLine>
 
         <CodeLine number="4" />
 
         <CodeLine number="5">
           &nbsp;&nbsp;
-          <span className="text-[#c792ea]">return</span>{" "}
-          <span className="text-[#89ddff]">(</span>
+          <span className="text-[#8b5cf6]">return</span>{" "}
+          <span className="text-[#0891b2]">(</span>
         </CodeLine>
 
         <CodeLine number="6">
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <span className="text-[#89ddff]">&lt;</span>
-          <span className="text-[#f07178]">Portfolio</span>
+          <span className="text-[#0891b2]">&lt;</span>
+          <span className="text-[#dc2626]">Portfolio</span>
         </CodeLine>
 
         <CodeLine number="7">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span className="text-[#ffcb6b]">name</span>
-          <span className="text-[#89ddff]">=</span>
-          <span className="text-[#c3e88d]">"Sahil Patil"</span>
+          <span className="text-[#d97706]">name</span>
+          <span className="text-[#0891b2]">=</span>
+          <span className="text-[#16a34a]">
+            "Sahil Patil"
+          </span>
         </CodeLine>
 
         <CodeLine number="8">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span className="text-[#ffcb6b]">role</span>
-          <span className="text-[#89ddff]">=</span>
-          <span className="text-[#c3e88d]">
+          <span className="text-[#d97706]">role</span>
+          <span className="text-[#0891b2]">=</span>
+          <span className="text-[#16a34a]">
             "MERN Stack Developer"
           </span>
         </CodeLine>
 
         <CodeLine number="9">
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <span className="text-[#89ddff]">/&gt;</span>
+          <span className="text-[#0891b2]">/&gt;</span>
         </CodeLine>
 
         <CodeLine number="10">
           &nbsp;&nbsp;
-          <span className="text-[#89ddff]">);</span>
+          <span className="text-[#0891b2]">);</span>
         </CodeLine>
 
         <CodeLine number="11">
-          <span className="text-[#89ddff]">{"}"}</span>
+          <span className="text-[#0891b2]">{"}"}</span>
+
+          {/* Blinking Cursor */}
           <span
             className="
               ml-1 inline-block
@@ -151,21 +158,21 @@ function CodeEditor() {
       {/* Terminal */}
       <div
         className="
-          border-t border-white/[0.08]
-          bg-[#0c0d12]
+          border-t border-[#e5e7eb]
+          bg-[#f8f9fa]
           px-[22px] py-3.5
           font-mono text-xs
-          text-[#9aa0ac]
+          text-[#5f636d]
         "
       >
         <div>
-          <span className="text-[#22d3ee]">➜</span>{" "}
+          <span className="text-[#0891b2]">➜</span>{" "}
           npm run dev
         </div>
 
-        <div className="mt-1 text-[#5c6270]">
+        <div className="mt-1 text-[#8b929c]">
           ✓ compiled successfully{" "}
-          <span className="text-[#8adf8a]">
+          <span className="text-[#16a34a]">
             — ready in 312ms
           </span>
         </div>
@@ -177,7 +184,7 @@ function CodeEditor() {
 function CodeLine({ number, children }) {
   return (
     <div>
-      <span className="inline-block w-5 select-none text-[#5c6270]">
+      <span className="inline-block w-5 select-none text-[#9ca3af]">
         {number}
       </span>
       {children}
@@ -186,3 +193,4 @@ function CodeLine({ number, children }) {
 }
 
 export default CodeEditor;
+

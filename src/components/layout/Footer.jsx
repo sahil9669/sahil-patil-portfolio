@@ -2,7 +2,7 @@ import SocialLinks from "../ui/SocialLinks";
 
 function Footer() {
   return (
-    <footer className="border-t border-white/[0.08] bg-[#0a0b0f]">
+    <footer className="border-t border-[#e1e4e8] bg-white">
       <div
         className="
           mx-auto flex max-w-7xl
@@ -14,7 +14,7 @@ function Footer() {
         "
       >
         {/* Copyright */}
-        <p className="text-[#5c6270]">
+        <p className="text-[#6b7280]">
           © {new Date().getFullYear()} Sahil Patil. All rights reserved.
         </p>
 

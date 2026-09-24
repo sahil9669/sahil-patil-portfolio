@@ -1,3 +1,4 @@
+
 import SectionHeading from "../ui/SectionHeading";
 import Reveal from "../ui/Reveal";
 
@@ -24,7 +25,7 @@ function Experience() {
             className="
               relative
               border-l
-              border-white/[0.08]
+              border-[#e1e4e8]
               pl-8
               sm:pl-10
             "
@@ -38,7 +39,6 @@ function Experience() {
                 h-2.5 w-2.5
                 rounded-full
                 bg-[#7c5cfc]
-                shadow-[0_0_12px_rgba(124,92,252,0.7)]
               "
             />
 
@@ -46,12 +46,13 @@ function Experience() {
             <div
               className="
                 rounded-[20px]
-                border border-white/[0.08]
-                bg-[#12141b]
+                border border-[#e1e4e8]
+                bg-white
                 p-6
+                shadow-sm
                 transition-all duration-300
                 hover:border-[#7c5cfc]/50
-                hover:shadow-[0_20px_50px_-20px_rgba(124,92,252,0.25)]
+                hover:shadow-[0_20px_50px_-20px_rgba(124,92,252,0.2)]
                 sm:p-7
               "
             >
@@ -70,7 +71,7 @@ function Experience() {
                       font-['Space_Grotesk']
                       text-xl
                       font-semibold
-                      text-[#f2f3f6]
+                      text-[#17191f]
                     "
                   >
                     Data Science Intern
@@ -85,7 +86,7 @@ function Experience() {
                   className="
                     font-mono
                     text-xs
-                    text-[#5c6270]
+                    text-[#6b7280]
                   "
                 >
                   Jan 2026
@@ -98,7 +99,7 @@ function Experience() {
                   max-w-3xl
                   text-sm
                   leading-relaxed
-                  text-[#9aa0ac]
+                  text-[#5f636d]
                 "
               >
                 Worked on a data science project focused on house price
@@ -115,12 +116,12 @@ function Experience() {
                       key={technology}
                       className="
                         rounded-full
-                        border border-[#22d3ee]/20
+                        border border-[#22d3ee]/25
                         bg-[#22d3ee]/[0.08]
                         px-2.5 py-1
                         font-mono
                         text-[10.5px]
-                        text-[#22d3ee]
+                        text-[#0891b2]
                       "
                     >
                       {technology}
